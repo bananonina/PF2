@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+.k_list {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.k_list .k_category {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.k_list .k_category li {
+    flex: 1;
+    text-align: center;
+}
+.k_list .k_category li a figure {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #9D8C90 url(../img/k_icon1.png) no-repeat center;
+}
+.k_list .k_category li a figure .ico02 {
+    background-image: url(../img/k_icon2.png);
+}
+.k_list .k_category li a figure .ico03 {
+    background-image: url(../img/k_icon3.png);
+}
+.k_list .k_category li a figure .ico04 {
+    background-image: url(../img/k_icon4.png);
+}
+.k_list .k_category li a figure .ico05 {
+    background-image: url(../img/k_icon5.png);
+}
+.k_list .k_category li a h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+/* section */
+#promotion {
+    width: 1400px;
+    margin: 80px auto 50px;
+}
+#promotion .title_area {
+    display: flex;
+    justify-content: space-between; /* 부모요소를 기준으로 세로기준 가로정렬 */
+    align-items: center; /* 부모요소를 기준으로 가로기준 세로정렬 */
+    margin-bottom: 30px;
+}
+.title_area h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+}
+.promotion_list {
+    display: flex;
+    justify-content: space-between;
+}
+.promotion_list li {
+    width: 31.5%;
+    height: 150px;
+}
+.promotion_list li > a {
+    display: block;
+    height: 100%; /* height는 부모에게서 상속이 안되므로 반드시 값을 선언 */
+    padding: 45px 0 30px 130px;
+    background: #E05857 url(../img/bg_call.png) no-repeat 25px center;
+    box-sizing: border-box;
+}
+.promotion_list li:nth-child(2) > a {
+    background-color: #2D3367;
+    background-image: url(../img/bg_place.png);
+} 
+.promotion_list li:last-child > a {
+    background-color: #404352;
+    background-image: url(../img/bg_home.png);
+}
+.promotion_list li h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.promotion_list li p {
+    color: rgba(255, 255, 255, 0.8);
+}
